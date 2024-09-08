@@ -7,7 +7,7 @@ marked.setOptions({
 
 console.log(window.navigator.platform)
 
-const apiUrl = "https://duckgpt.iriszarox.workers.dev/chat/";
+const apiUrl = window.location.origin + "/chat/";
 const chatBox = document.getElementById("chat-box");
 const chatInput = document.getElementById("chat-input");
 const placeholder = document.getElementById("placeholder");
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }}
   
   const link = document.createElement('link');
-  link.href = 'styles/styles.css';
+  link.href = 'https://feelded.github.io/duckgpt/styles/styles.css';
   link.rel = 'stylesheet';
   document.head.appendChild(link);
 });
